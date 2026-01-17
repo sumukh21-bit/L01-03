@@ -1,1 +1,25 @@
 /* CSS for Memory Match and High Scores pages */
+
+
+.Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.motto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.status-panel{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: rgb(254, 254, 254);
+    width:300px;
+    box-shadow: 12px 4px 12px rgba(20, 20, 20, 0.15);
+    border-radius: 30px;
+
+}
