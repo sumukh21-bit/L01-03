@@ -2,6 +2,7 @@
 // Memory Match — 
 // ------------------------------------------------------------
 
+//iniatlizing and getting the variables
 const board = document.getElementById('board');
 const movesDis = document.getElementById('moves');
 const cr_pairsDis = document.getElementById('matches')
@@ -20,6 +21,7 @@ const btnNewGame = document.getElementById('btn-new-game');
 const btnReset = document.getElementById('btn-reset')
 
 function stopTimer(){
+    // Stops the timer when the user gets all of the pairs
     if(interval!=null){
         clearInterval(interval);
         interval=null;
@@ -27,6 +29,7 @@ function stopTimer(){
 }
 
 function startTimer(){
+    //Starts the timer when user clicks on the first card
     if(interval!=null){
         return 
     }
@@ -39,6 +42,7 @@ function startTimer(){
 }
 
 function shuffleSyms(arr){
+    //Shuffles the current symbols so each time there is a new game the symbols are randonly shuffeled
     const s = [...arr];
     for(let  i= s.length-1; i>0; i--){
         const calc = Math.floor(Math.random()*(i+1));
@@ -52,6 +56,7 @@ function shuffleSyms(arr){
 }
 
 function resetGame(){
+    //When the user clicks on the resetbutton then the variables sets to default
     cr_pairs=0;
     moves=0
      t_s =0;
@@ -76,6 +81,7 @@ function resetGame(){
 }
 
 function BuildGame(Fsyms){
+    //This function handles when the user clicks on the card
     board.innerHTML="";
 
     Fsyms.forEach(sym => {
@@ -128,6 +134,8 @@ function runGame(card){
         return;
     }
    
+    Selc1.classList.add("wrong");
+    Selc2.classList.add("wrong");
 
     setTimeout(() => {
     Selc1.classList.remove("flipped", "wrong");
@@ -135,7 +143,7 @@ function runGame(card){
 
   fCard = [];
   isBlock = false;
-   }, 800);
+   }, 1000);
    
 
    

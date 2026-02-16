@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Displays the navigation bar which allows the user to switch between-->
     <nav class="navbar has-shadow is-dark">
         <div class="navbar-menu is-color">
             <a class="has-text-weight-bold navbar-item has-text-white is-primary">Memory match</a>
@@ -16,14 +17,19 @@
             <a href="high_scores.html" class="navbar-item has-text-white">High Scores</a>
 
         </div>
+        <div></div>
 
     </nav>
+
+    <!--Shows the title-->
     <div class="titl">
         <h1 class="has-text-centered py-1 mx-1 is-size-1 has-text-weight-bold has-text-dark">Memory Match Game</h1>
         <p class="has-text-centered">Flip two cards at a time. If they match, they stay revealed. Match all pairs to win.</p>
 
     </div>
+    <!--This section which holds the container of game status panel and board -->
     <section class="section">
+        <!--This container hold game status panel -->
         <div class="container">
             <div class="columns">
                 <div class="column is-3 ">
@@ -42,9 +48,10 @@
                     </div>
                 </div> 
             </div>
-            <div class="column is-8 is-centerd">
+           <!--Board and message div-->
+            <div class="column is-6 is-centerd px-5">
                     <div class="box">
-                        <h2 class="title is-4">Board</h2>
+                        <h2 class="title is-2">Board</h2>
                         <div id="board"></div> 
                         <div id="message" class="has-text-centered is-size-5 has-text-weight-bold mt-4"></div>
                     </div>

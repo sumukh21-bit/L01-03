@@ -22,16 +22,16 @@
     grid-template-columns: repeat(4,1fr);
     grid-gap:20px ;
     max-width: 500px;
+    margin: 12px ;
 
    
-    margin: 30px auto;
+
 }
 
 .card{
-    width: 100px;
+    width: 130px;
     height:100px;
-    position: relative;
-    background-color: rgb(65, 90, 112);
+    border-radius: 20px;
     cursor: pointer;
     transform-style: preserve-3d;
 
@@ -39,6 +39,7 @@
 
 .card.flipped{
     transform: rotateY(180deg);
+   
 }
 
 .card-face {
@@ -55,18 +56,23 @@
 }
 
 .card-back {
-    background-color: #595858;
+    background-color: rgb(30, 43, 68);
     color: white;
 }
 
 .card-front {
-    background-color: #363636;
-    color: white;
     transform: rotateY(180deg);
 }
 
 
-.card-matched .card-front {
-    background-color: #48c774;
-    border-color:  #48c774;
+.card.matched .card-front {
+    background-color: rgb(208, 250, 229);
+    border: 2px solid #48c774;
+}
+
+
+
+.card.wrong{
+    background-color: rgb(238, 154, 154);
+    border: 2px solid #ef2222;
 }
