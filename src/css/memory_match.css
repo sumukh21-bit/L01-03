@@ -8,28 +8,26 @@
 }
 
 .status-panel{
-    padding: 30px;
-    width: 300px;
-    height: 300px;
+    margin-bottom: 20px;
 
 
 
 }
 .section{
-    width:400px;
-    height: 300px;
+    min-height: 100vh;
 }
 
 #board{
     display: grid;
-    grid-template-columns: repeat(4,100px);
-    grid-gap:20px 20px;
-    justify-content: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:20px ;
+    max-width: 500px;
+
    
-    margin-top: 20px;
+    margin: 30px auto;
 }
 
-.card-item{
+.card{
     width: 100px;
     height:100px;
     position: relative;
@@ -39,7 +37,7 @@
 
 }
 
-.card-item.is-flipped{
+.card.flipped{
     transform: rotateY(180deg);
 }
 
@@ -57,18 +55,18 @@
 }
 
 .card-back {
-    background-color: #363636;
+    background-color: #595858;
     color: white;
 }
 
-
 .card-front {
-    background-color: #00d1b2;
+    background-color: #363636;
     color: white;
     transform: rotateY(180deg);
 }
 
 
-.card-item.is-matched .card-front {
+.card-matched .card-front {
     background-color: #48c774;
+    border-color:  #48c774;
 }

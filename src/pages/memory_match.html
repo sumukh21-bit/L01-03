@@ -26,7 +26,7 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column ">
+                <div class="column is-3 ">
                     <div id="status-panel" class="box">
                         <h1 class="is-size-3"> Game status</h1>
                  
@@ -34,30 +34,28 @@
                             <p class="is-size-4"><strong>Matches:</strong> <span id="matches">0</span> / <span id="total-pairs">8</span></p>
                             <p class="is-size-4"><strong>Time:</strong> <span id="time">0</span> s</p>
 
-                    <hr><div class="buttons">
-        <button id="btn-new-game" class="my-2 button is-primary is-fullwidth">New Game</button>
-         <button id="btn-reset" class="button has-text-link has-background-link-light is-fullwidth">Reset (Same Board)</button>
-                
 
-    </div>
-    <h1 class="is-size-1">Game Board</h>
-    <div id="board" class="columns is-8" >
-               
-        
-             </div>
-                    <div id="message"></div>
-
-                </div>
-                
+                    <hr>
+                    <div class="buttons">
+                        <button id="btn-new-game" class="my-2 button is-primary is-fullwidth">New Game</button>
+                        <button id="btn-reset" class="button has-text-link  is-fullwidth">Reset (Same Board)</button>
                     </div>
-                </div>
+                </div> 
             </div>
-        </div>
-    <div>
+            <div class="column is-8 is-centerd">
+                    <div class="box">
+                        <h2 class="title is-4">Board</h2>
+                        <div id="board"></div> 
+                        <div id="message" class="has-text-centered is-size-5 has-text-weight-bold mt-4"></div>
+                    </div>
+             
+
+            </div> </div> </section>
+    
                     
         
     <script src="../js/memory_match.js"></script>
-    </section>
+    
 
     
 
